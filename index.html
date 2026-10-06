@@ -78,7 +78,7 @@
 
     <section class="proof-strip" aria-label="Professional highlights">
       <div class="container proof-grid reveal">
-        <article><strong>15+</strong><span>REST APIs integrated</span></article>
+        <article><strong>150+</strong><span>REST APIs integrated</span></article>
         <article><strong>2</strong><span>apps from one flavor architecture</span></article>
         <article><strong>~15%</strong><span>release size reduction</span></article>
         <article><strong>Android + iOS</strong><span>production delivery</span></article>
@@ -123,7 +123,7 @@
               <p class="role">Software Engineer · Flutter Developer</p>
               <h3>Vyas Cancer Research Park</h3>
             </div>
-            <p class="date">Jun 2022 — Present</p>
+            <p class="date">Jun 2022 — Oct 2026</p>
           </div>
 
           <div class="experience-body">
@@ -132,7 +132,7 @@
             </div>
             <ul>
               <li>Architected a multi-flavor Flutter codebase powering Lumiseek and Health &amp; Harmony across Android and iOS.</li>
-              <li>Integrated 15+ RESTful APIs and implemented Hive caching to preserve registration drafts and reduce user-input loss.</li>
+              <li>Integrated 150+ RESTful APIs and implemented Hive caching to preserve registration drafts and reduce user-input loss.</li>
               <li>Resolved critical Firebase Cloud Messaging issues, including duplicate notifications and deep-link routing on click.</li>
               <li>Hardened Android release builds with ProGuard/R8 obfuscation and resource shrinking, reducing app size by approximately 15%.</li>
             </ul>
@@ -235,7 +235,7 @@
         <div class="skills-grid">
           <article class="skill-card reveal"><span class="skill-icon">⌁</span><p class="skill-label">Core</p><h3>Mobile Development</h3><p>Flutter, Dart, Android, iOS, BLoC</p></article>
           <article class="skill-card reveal"><span class="skill-icon">{ }</span><p class="skill-label">Integration</p><h3>Backend &amp; APIs</h3><p>Python, FastAPI, RESTful APIs, Postman</p></article>
-          <article class="skill-card reveal"><span class="skill-icon">◇</span><p class="skill-label">Data</p><h3>Services &amp; Persistence</h3><p>Firebase, Hive, local persistence, third-party integrations</p></article>
+          <article class="skill-card reveal"><span class="skill-icon">◇</span><p class="skill-label">Data</p><h3>Services &amp; Persistence</h3><p>MySQL, Firebase, Hive, local persistence, third-party integrations</p></article>
           <article class="skill-card reveal"><span class="skill-icon">↗</span><p class="skill-label">Production</p><h3>Release Engineering</h3><p>Git, Android Studio, ProGuard/R8, debugging and optimization</p></article>
           <article class="skill-card reveal"><span class="skill-icon">✦</span><p class="skill-label">Growing</p><h3>Applied AI</h3><p>Generative AI, prompt engineering, AI application workflows</p></article>
         </div>
@@ -294,11 +294,21 @@
       <div class="footer-links">
         <a href="https://github.com/Prathyusha48" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/buddha-prathyusha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top" id="back-to-top">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Reliable Back to Top behavior, independent of the main site script.
+    const backToTopLink = document.getElementById('back-to-top');
+    if (backToTopLink) {
+      backToTopLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      });
+    }
+  </script>
 </body>
 </html>
